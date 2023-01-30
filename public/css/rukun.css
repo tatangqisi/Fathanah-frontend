@@ -1,0 +1,165 @@
+.rukun{
+    margin: 110px auto 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rukun a img.back{
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.h-rukun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.h-rukun img{
+    width: 62px;
+    height: 62px;
+    animation: gones 1s infinite alternate;
+}
+
+.h-rukun img:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+@keyframes gones{
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.h-rukun h1{
+    font-size: 48px;
+    font-family: Lora;
+    font-weight: 1500;
+    color: #00692d;
+    margin: 10px;
+}
+
+.c-rukun{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card-rukun{
+    position: relative;
+    width: 403px;
+    height: 313px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: 1s;
+    transform-style: preserve-3d;
+    margin: 10px;
+}
+
+.card-rukun.isflipped{
+    transform: rotateX(180deg);
+}
+
+.card-rukun .line-c{
+    position: absolute;
+    inset: 0;
+    background: #00692d;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-back{
+    transform: rotateX(180deg);
+}
+
+.card-rukun .line-c::before{
+    display: none;
+}
+
+.card-rukun:hover .line-c::before{
+    content: '';
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 613px;
+    height: 123px;
+    background-image: linear-gradient(transparent, #ffd700, #ffd700, transparent);
+    animation: spins 4s linear infinite;
+    display: initial;
+}
+
+@keyframes spins {
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.rukun-imgBx{
+    position: absolute;
+    width: 403px;
+    height: 313px;
+    border: 4px solid #00692d;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-rukun:hover .rukun-imgBx{
+    inset: 5px;
+    border: none;
+    width: 393px;
+    height: 303px;
+} 
+
+.rukun-imgBx img{
+    width: 100%;
+    height: 100%;
+}
+
+.rukun-content{
+    position: absolute;
+    width: 403px;
+    height: 313px;
+    background: #00692d;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-rukun:hover .rukun-content{
+    inset: 5px;
+    width: 393px;
+    height: 303px;
+}
+
+.rukun-content h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.rukun-content p{
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    text-align: justify;
+}

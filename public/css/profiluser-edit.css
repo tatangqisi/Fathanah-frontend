@@ -1,0 +1,138 @@
+.editprofiluser{
+    margin: 90px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editprofiluser h1{
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    color: #00692d;
+    text-align: center;
+}
+
+.backbutton a img{
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+}
+
+.editprofil-cont{
+    width: 100%;
+    display: flex;
+}
+
+.editprofil-img{
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.editprofil-img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.editprofil-img a{
+    width: 200px;
+    height: 45px;
+    background-color: #00692d;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(155px);
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffd700;
+}
+
+.editprofil-img a:hover{
+    color: #fff;
+}
+
+.editprofil-img a:active{
+    background-color: #ece7f5;
+    color: #00692d;
+}
+
+.editprofil-content{
+    width: 60%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.editprofil-content form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 40px;
+}
+
+.editprofil-content label{
+    display: flex;
+    flex-direction: column;
+}
+
+.editprofil-content label span{
+    font-family: Ubuntu, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 12px 0;
+}
+
+.editprofil-content label input{
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.editprofil-content label input:focus{
+    border: 2px solid #00692d;
+
+}
+
+.editprofil-content button{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #00692d;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.editprofil-content button:hover{
+    color: #ffd700;
+}
+
+.editprofil-content button:active{
+    color: #00692d;
+    background-color: #ffd700;
+}

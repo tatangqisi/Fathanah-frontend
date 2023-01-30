@@ -1,0 +1,331 @@
+/* Main MyDiary start */
+.mydiarymain{
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-diary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-diary h1{
+    font-size: 50px;
+    font-family: Lora;
+    font-weight: 700;
+    color: #00692d;
+}
+
+.main-diary img{
+    width: 500px;
+    transform: translateY(-65px);
+}
+
+.main-diary-com{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    transform: translateY(-47px);
+}
+
+button.buttondelete{
+    background-color: transparent;
+    border-style: none;
+}
+
+button.buttondiary{
+    width: 180px;
+    height: 50px;
+    margin-left: auto;
+    margin-bottom: 30px;
+    right: 0;
+    border-style: none;
+    background-color: #ffd700;
+    border-radius: 30px;
+}
+
+button.buttondiary a{
+    text-decoration: none;
+    color: #00692d;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+button.buttondiary:hover{
+    background-color: #00692d;
+}
+
+button.buttondiary:hover a{
+    color: #ffd700;
+}
+
+.cont-diarymain{
+    background-color: #4d926b;
+    padding: 10px 40px;
+    margin: 10px 0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.h-cont-diarymain a{
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.h-cont-diarymain h4{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.im-cont-diarymain{
+    right: 0;
+}
+
+.im-cont-diarymain1{
+    margin-left: auto;
+    right: 100;
+}
+
+.im-cont-diarymain1 img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.im-cont-diarymain img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.im-cont-diarymain span.d-alert{
+    position: absolute;
+    background-color: #ece7f5;
+    font-family: Ubuntu;
+    font-size: 12px;
+    width: 50px;
+    padding: 5px;
+    transform: translate(-34px, 51px);
+    right: 0;
+    border-radius: 7px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.im-cont-diarymain:hover span.d-alert{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1s;
+}
+/* Main MyDiary end */
+
+/* Input MyDiary start */
+
+.mydiaryinput{
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img.back-img{
+    width: 50px;
+    height: 50px;
+}
+
+.input-diary{
+    display: flex;
+    flex-direction: column;
+}
+
+.mydiary-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.mydiary-input input{
+    width: 1200px;
+    height: 30px;
+    border: 2px solid #00692d;
+    border-radius: 30px;
+    background-color: #ece7f5;
+    padding: 5px 30px;
+    outline: none;
+    font-family: Ubuntu;
+    font-size: 25px;
+    color: #86888a;
+    margin-bottom: 15px;
+}
+
+.mydiary-input textarea{
+    width: 1200px;
+    height: 300px;
+    border: 2px solid #00692d;
+    border-radius: 30px;
+    background-color: #ece7f5;
+    padding: 15px 30px;
+    outline: none;
+    font-family: Ubuntu;
+    font-size: 25px;
+    color: #86888a;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+button.diary-submit{
+    width: 150px;
+    height: 40px;
+    background-color: #00692d;
+    border-radius: 30px;
+    margin-left: 1120px;
+    right: 0;
+    font-family: Ubuntu;
+    font-size: 25px;
+    color: #ffd700;
+    border-style: none;
+}
+
+button.diary-submit:hover{
+    background-color: #ffd700;
+    color: #00692d;
+}
+
+/* Input MyDiary end */
+
+/* View MyDiary start */
+
+.mydiaryview{
+    margin-top: 120px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mydiary-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-diary{
+    width: 95%;
+    height: unset;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px;
+    border: 2px solid #00692d;
+    background-color: #ece7f5;
+    border-radius: 30px;
+}
+
+.button-mydiaryview{
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.button-mydiaryview button{
+    width: 120px;
+    height: 40px;
+    border-style: none;
+    background-color: #00692d;
+    border-radius: 30px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #ffd700;
+    margin: 0 10px;
+}
+
+.button-mydiaryview button:hover{
+    background-color: #ffd700;
+    color: #00692d;
+}
+
+.view-diary input{
+    width: 875px;
+    resize: none;
+    overflow: hidden;
+    padding: 20px 30px;
+    outline: none;
+    font-family: Ubuntu;
+    text-align: justify;
+    font-size: 25px;
+    color: #86888a;
+    border-style: none;
+    background: transparent;
+
+}
+
+.view-diary textarea{
+    width: 1140px;
+    height: 90vh;
+    resize: none;
+    overflow: hidden;
+    padding: 20px 30px;
+    outline: none;
+    font-family: Ubuntu;
+    text-align: justify;
+    font-size: 25px;
+    color: #86888a;
+    border-style: none;
+    background: transparent;
+
+}
+
+.title-viewdiary{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.title-viewdiary h1{
+    font-family: Ubuntu;
+    font-size: 30px;
+    color: #86888a;
+    margin-right: auto;
+}
+
+.title-viewdiary h4{
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: #86888a;
+}
+
+/* View MyDiary end */

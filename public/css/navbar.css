@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 15px 45px;
+    justify-content: space-between;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.brand{
+    width: 187px;
+    height: 94px;
+    box-sizing: border-box;
+}
+
+.brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+ul#nav{
+    display: flex;
+}
+
+li.navli {
+    list-style: none;
+    padding: 0 0 0 30px;
+}
+
+.drop:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 1.5px solid #fff;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: -5px;
+    
+}
+
+.drop::after{
+    content: '';
+    display: block;
+    border-bottom: 1.5px solid #fff;
+    width: 0%;
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: -5px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.drop.nyalaya::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2px;
+    margin-bottom: -5px;
+}
+
+li.navli a{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-family: Ubuntu, sans-serif;
+}
+
+#arrow{
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+#arrow.kebalik{
+    transform: rotateX(180deg);
+}
+
+.dropdown-ul{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #86888a;
+    display: none;
+    padding: 10px 0;
+}
+
+.dropdown-ul.muncullah{
+    display: block;
+    transform: translateY(10%);
+}
+
+.dropdown-ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-ul li:hover{
+    background-color: #ebebeb;
+   
+}
+
+.dropdown-ul li:hover a{
+     color: #014b21;
+}

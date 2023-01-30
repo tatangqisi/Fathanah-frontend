@@ -1,0 +1,156 @@
+.profiluser{
+    margin: 90px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profiluser h1{
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+    font-size: 40px;
+    color: #00692d;
+    text-align: center;
+}
+
+.backbutton a img{
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+}
+
+.profil-cont{
+    width: 100%;
+    display: flex;
+}
+
+.profil-img{
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil-img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil-img a{
+    width: 200px;
+    height: 45px;
+    background-color: #00692d;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(155px);
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffd700;
+}
+
+.profil-img a:hover{
+    color: #fff;
+}
+
+.profil-img a:active{
+    background-color: #ece7f5;
+    color: #00692d;
+}
+
+.profil-content{
+    width: 60%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profil-subject{
+    width: 100%;
+}
+
+.profil-subject span{
+    font-family: Ubuntu, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 12px 0;
+}
+
+.profil-subject p{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 0;
+    font-size: 18px;
+    font-family: Ubuntu, sans-serif;
+    border-bottom: 3px solid #ffd700;
+    margin: 12px 0;
+}
+
+.profil-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profil-button a{
+    width: 150px;
+    height: 40px;
+    background-color: #00692d;
+    border-radius: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.profil-button a:hover{
+    color: #ffd700;
+}
+
+.profil-button a:active{
+    background-color: #ffd700;
+    color: #00692d;
+}
+
+.profil-button button{
+    width: 150px;
+    height: 40px;
+    background-color: #00692d;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.profil-button button:hover{
+    color: #ffd700;
+}
+
+.profil-button button:active{
+    background-color: #ffd700;
+    color: #00692d;
+}

@@ -1,0 +1,88 @@
+.doa-doa2{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doa-doa2 .head-doa-doa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.doa-doa2 .head-doa-doa h1{
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: #00692d;
+}
+
+.doa-doa2 .head-doa-doa hr{
+    width: 25%;
+    height: 4px;
+    border: none;
+    background-color: #ffd700;
+}
+
+.doa-doa2 .content-doa-doa{
+    width: 100%;
+}
+
+.doa-doa2 .content-doa-doa .isi-doa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 100px;
+}
+
+.doa-doa2 .content-doa-doa .isi-doa h2{
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    margin: 0 0 40px;
+}
+
+@font-face {
+    font-family: arab2;
+    src: url('http://192.168.138.116:8000/font/tradbdo.ttf');
+}
+
+.doa-doa2 .content-doa-doa .isi-doa h1.arab{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    margin: 0 50px 40px;
+    text-align: right;
+}
+
+.doa-doa2 .content-doa-doa .isi-doa h3.latin{
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    width: 100%;
+    margin: 0 50px 10px;
+    text-align: left;
+}
+
+.doa-doa2 .content-doa-doa .isi-doa h4.arti-doa{
+    font-size: 20px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 50px;
+    text-align: left;
+}
+
+.highlightedElem{
+    background-color: #198246;
+    color: #ece7f5;
+}

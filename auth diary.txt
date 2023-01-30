@@ -1,0 +1,13 @@
+->middleware('auth')
+->middleware('auth')
+->middleware('auth')
+
+@auth
+@else
+            <div class="subMenu">
+                <div class="box-k">
+                    <a href="/login-register"><img src="{{asset('icons/20.png')}}" alt=""></a>
+                </div>
+                <h6>MyDiary </h6>
+            </div>
+            @endauth

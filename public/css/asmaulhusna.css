@@ -1,0 +1,1183 @@
+/* windows version */
+@media (min-width: 769px) {
+    .as-body{
+        padding: 50px 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: #008953;
+    }
+
+    .jumb-asma{
+        width: 100%;
+        height: 452px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+    }
+
+    .jumb-asma img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .jumb-asma h1{
+        font-family: Lora;
+        font-size: 52px;
+        font-weight: 900;
+        color: #ffffff;
+        z-index: 9;
+    }
+
+    .jumb-asma:after{
+        content: '';
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .AsmaulHusna-Header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 40px 40px;
+    }
+
+    .plays{
+        width: 125px;
+        height: 125px;
+        background-color: #ece7f5;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+    }
+
+
+    .play-as{
+        width: 110px;
+        height: 110px;
+        background-color: #00692d;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-asm{
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .play-asm:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale 4s linear infinite;
+    }
+
+    .play-asm:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale 4s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .play-asm.active:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale2 4s linear infinite alternate;
+    }
+
+    .play-asm.active:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale2 4s linear infinite alternate;
+        animation-delay: 3s;
+    }
+
+    @keyframes scale {
+        0%{
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        95%{
+            opacity: 1;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .play-as img{
+        width: 60px;
+        height: 60px;
+        transform: translateX(5px);
+        cursor: pointer;
+    }
+
+    .play-as span.play-al{
+        position: absolute;
+        background-color: #ece7f5;
+        font-family: Ubuntu;
+        font-size: 15px;
+        width: 180px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 700;
+        transform: translateY(115px);
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .play-as:hover span.play-al{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .play-as span.play-al::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        top: -7px;
+        left: 48.5%;
+        position: absolute;
+        background-color: #ece7f5;
+        transform: rotate(45deg);
+    }
+
+    .play-as img.play{
+        transform: translateX(0px);
+    }
+
+    .asmaul-husna{
+        display: flex;
+        align-items: center;
+        background-color: #ebebeb;
+        border: 2px solid #014b21;
+        border-radius: 18px;
+        padding: 15px 20px;
+        margin: 10px 5px;
+        width: 620px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna h2{
+        font-family: Lora;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #014b21;
+    }
+
+    .asmaul-content h4{
+        font-family: Lora;
+        font-size: 25px;
+        color: #014b21;
+    }
+
+    .asmaul-content p{
+        font-family: Roboto;
+        font-size: 20px;
+        color: #014b21;
+    }
+
+    @font-face {
+        font-family: arab;
+        src: url('http://192.168.138.116:8000/font/Khat-Thuluth.TTF');
+    }
+
+    .asmaul-husna h1{
+        font-family: arab;
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: auto;
+        right: 0;
+        color: #014b21;
+        text-align: right;
+    }
+}
+
+/* mobile version */
+
+@media (max-width: 768px) {
+    .jumb-asma{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 70px;
+    }
+    .jumb-asma img{
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    .jumb-asma h1{
+        font-family: Lora;
+        font-size: 32px;
+        font-weight: 900;
+        text-shadow: 1px 1px 0 #ece7f5;
+        color: #00692d;
+        position: absolute;
+        transform: translateY(37px);
+        z-index: 9;
+    }
+
+    .jumb-asma:after{
+        content: '';
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .plays{
+        width: 70px;
+        height: 70px;
+        background-color: #ece7f5;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        transform: translate(-200px, 95px);
+    }
+
+    .play-asm{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .play-asm:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale 4s linear infinite;
+    }
+    
+    .play-asm:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale 4s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .play-asm.active:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale2 4s linear infinite alternate;
+    }
+
+    .play-asm.active:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale2 4s linear infinite alternate;
+        animation-delay: 3s;
+    }
+
+    @keyframes scale {
+        0%{
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        95%{
+            opacity: 1;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .play-as{
+        width: 60px;
+        height: 60px;
+        background-color: #00692d;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-as img{
+        width: 25px;
+        height: 25px;
+        transform: translateX(2px);
+        cursor: pointer;
+    }
+
+    .play-as span.play-al{
+        display: none;
+    }
+
+    .play-as img.play{
+        transform: translateX(0px);
+    }
+
+    .as-body{
+        margin: 45px 20px 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna{
+        display: flex;
+        align-items: center;
+        background-color: #00692d;
+        border: 2px solid #ffd700;
+        border-radius: 13px;
+        padding: 10px 15px;
+        margin: 10px 5px;
+        width: 620px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna h2{
+        font-family: Lora;
+        font-size: 20px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content h4{
+        font-family: Lora;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content p{
+        font-family: Roboto;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    @font-face {
+        font-family: arab;
+        src: url('http://192.168.138.116:8000/font/Khat-Thuluth.TTF');
+    }
+
+    .asmaul-husna h1{
+        font-family: arab;
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: auto;
+        right: 0;
+        color: #ffffff;
+        text-align: right;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumb-asma{
+        width: 100%;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 70px;
+    }
+    .jumb-asma img{
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .jumb-asma h1{
+        font-family: Lora;
+        font-size: 28px;
+        font-weight: 900;
+        text-shadow: 1px 1px 0 #ece7f5;
+        color: #00692d;
+        position: absolute;
+        transform: translateY(37px);
+        z-index: 9;
+    }
+
+    .jumb-asma:after{
+        content: '';
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .plays{
+        width: 60px;
+        height: 60px;
+        background-color: #ece7f5;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        transform: translate(-130px, 78px);
+    }
+
+    .play-asm{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .play-asm:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale 4s linear infinite;
+    }
+    
+    .play-asm:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale 4s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .play-asm.active:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale2 4s linear infinite alternate;
+    }
+
+    .play-asm.active:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale2 4s linear infinite alternate;
+        animation-delay: 3s;
+    }
+
+    @keyframes scale {
+        0%{
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        95%{
+            opacity: 1;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .play-as{
+        width: 52px;
+        height: 52px;
+        background-color: #00692d;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-as img{
+        width: 25px;
+        height: 25px;
+        transform: translateX(2px);
+        cursor: pointer;
+    }
+
+    .play-as span.play-al{
+        display: none;
+    }
+
+    .play-as img.play{
+        transform: translateX(-1px);
+    }
+
+    .as-body{
+        margin: 35px 15px 25px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna{
+        display: flex;
+        align-items: center;
+        background-color: #00692d;
+        border: 2px solid #ffd700;
+        border-radius: 13px;
+        padding: 20px 25px;
+        margin: 5px 5px;
+        width: 620px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna h2{
+        font-family: Lora;
+        font-size: 18px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content h4{
+        font-family: Lora;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content p{
+        font-family: Roboto;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    @font-face {
+        font-family: arab;
+        src: url('http://192.168.138.116:8000/font/Khat-Thuluth.TTF');
+    }
+
+    .asmaul-husna h1{
+        font-family: arab;
+        font-size: 27px;
+        font-weight: 500;
+        margin-left: auto;
+        right: 0;
+        color: #ffffff;
+        text-align: right;
+    }
+}
+
+@media (max-width: 359px) {
+    .jumb-asma{
+        width: 100%;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 70px;
+    }
+    .jumb-asma img{
+        width: 100%;
+        height: 95px;
+        object-fit: cover;
+    }
+
+    .jumb-asma h1{
+        font-family: Lora;
+        font-size: 20px;
+        font-weight: 900;
+        text-shadow: 1px 1px 0 #ece7f5;
+        color: #00692d;
+        position: absolute;
+        transform: translateY(37px);
+        z-index: 9;
+    }
+
+    .jumb-asma:after{
+        content: '';
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .plays{
+        width: 48px;
+        height: 48px;
+        background-color: #ece7f5;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        transform: translate(-98px, 70px);
+    }
+
+    .play-asm{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .play-asm:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale 4s linear infinite;
+    }
+    
+    .play-asm:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale 4s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .play-asm.active:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale2 4s linear infinite alternate;
+    }
+
+    .play-asm.active:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale2 4s linear infinite alternate;
+        animation-delay: 3s;
+    }
+
+    @keyframes scale {
+        0%{
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        95%{
+            opacity: 1;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .play-as{
+        width: 42px;
+        height: 42px;
+        background-color: #00692d;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-as img{
+        width: 20px;
+        height: 20px;
+        transform: translateX(2px);
+        cursor: pointer;
+    }
+
+    .play-as span.play-al{
+        display: none;
+    }
+
+    .play-as img.play{
+        transform: translateX(-1px);
+    }
+
+    .as-body{
+        margin: 25px 7px 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna{
+        display: flex;
+        align-items: center;
+        background-color: #00692d;
+        border: 2px solid #ffd700;
+        border-radius: 13px;
+        padding: 5px 10px;
+        margin: 5px 5px;
+        width: 620px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna h2{
+        font-family: Lora;
+        font-size: 15px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content h4{
+        font-family: Lora;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content p{
+        font-family: Roboto;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    @font-face {
+        font-family: arab;
+        src: url('http://192.168.138.116:8000/font/Khat-Thuluth.TTF');
+    }
+
+    .asmaul-husna h1{
+        font-family: arab;
+        font-size: 25px;
+        font-weight: 500;
+        margin-left: auto;
+        right: 0;
+        color: #ffffff;
+        text-align: right;
+    }
+}
+
+@media (max-width: 240px) {
+    .jumb-asma{
+        width: 100%;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 70px;
+    }
+    .jumb-asma img{
+        width: 100%;
+        height: 95px;
+        object-fit: cover;
+    }
+
+    .jumb-asma h1{
+        font-family: Lora;
+        font-size: 20px;
+        font-weight: 900;
+        text-shadow: 1px 1px 0 #ece7f5;
+        color: #00692d;
+        position: absolute;
+        transform: translateY(37px);
+        z-index: 9;
+    }
+
+    .jumb-asma:after{
+        content: '';
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .plays{
+        width: 46px;
+        height: 46px;
+        background-color: #ece7f5;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+        transform: translateY(70px);
+    }
+
+    .play-asm{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 8;
+    }
+
+    .play-asm:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale 4s linear infinite;
+    }
+    
+    .play-asm:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale 4s linear infinite;
+        animation-delay: 0.5s;
+    }
+
+    .play-asm.active:before{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(77, 146, 107, 0.8);
+        animation: scale2 4s linear infinite alternate;
+    }
+
+    .play-asm.active:after{
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        width: 0;
+        height: 0;
+        background: rgba(25, 130, 70, 0.8);
+        animation: scale2 4s linear infinite alternate;
+        animation-delay: 3s;
+    }
+
+    @keyframes scale {
+        0%{
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+
+        95%{
+            opacity: 1;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    @keyframes scale2 {
+        0%{
+            width: 0;
+            height: 0;
+        }
+        
+        100%{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .play-as{
+        width: 41px;
+        height: 41px;
+        background-color: #00692d;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .play-as img{
+        width: 20px;
+        height: 20px;
+        transform: translateX(2px);
+        cursor: pointer;
+    }
+
+    .play-as span.play-al{
+        display: none;
+    }
+
+    .play-as img.play{
+        transform: translateX(-1px);
+    }
+
+    .as-body{
+        margin: 25px 7px 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna{
+        display: flex;
+        align-items: center;
+        background-color: #00692d;
+        border: 2px solid #ffd700;
+        border-radius: 13px;
+        padding: 5px 10px;
+        margin: 5px 5px;
+        width: 620px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .asmaul-husna h2{
+        font-family: Lora;
+        font-size: 15px;
+        margin-right: 10px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content h4{
+        font-family: Lora;
+        font-size: 12px;
+        color: #ffffff;
+    }
+    
+    .asmaul-content p{
+        font-family: Roboto;
+        font-size: 10px;
+        color: #ffffff;
+    }
+
+    @font-face {
+        font-family: arab;
+        src: url('http://192.168.138.116:8000/font/Khat-Thuluth.TTF');
+    }
+
+    .asmaul-husna h1{
+        font-family: arab;
+        font-size: 25px;
+        font-weight: 500;
+        margin-left: auto;
+        right: 0;
+        color: #ffffff;
+        text-align: right;
+    }
+}

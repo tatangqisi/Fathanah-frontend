@@ -1,0 +1,88 @@
+.muslimkidz{
+    margin-top: 110px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.swiper {
+    width: 1120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-kidz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.h-kidz img{
+    width: 62px;
+    height: 62px;
+    animation: gone 1s infinite alternate;
+}
+
+.h-kidz img:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+@keyframes gone{
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+.h-kidz h1{
+    font-size: 48px;
+    font-family: Lora;
+    font-weight: 1500;
+    color: #00692d;
+    margin: 10px;
+}
+
+.c-kidz img{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide, .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top, .swiper-3d .swiper-wrapper{
+    background-image: none;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    content: '';
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled{
+    display: none !important;
+}
+
+.swiper-button-prev.kidz-arrow img,
+.swiper-button-next.kidz-arrow img{
+    width: 50px;
+    height: 50px;
+}

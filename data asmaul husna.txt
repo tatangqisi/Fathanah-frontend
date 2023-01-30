@@ -1,0 +1,5 @@
+<!-- @foreach ($Data['Data'] as $data)
+    {{ $data['arab'] }}
+    {{ $data['latin'] }}
+    {{ $data['arti'] }}
+    @endforeach -->
